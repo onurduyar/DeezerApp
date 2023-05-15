@@ -139,13 +139,13 @@
 		7861352A2A12477F00CBB15E /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				786135612A124E3600CBB15E /* BaseViewModel.swift */,
 				7861355F2A124E2400CBB15E /* BaseVC.swift */,
+				786135612A124E3600CBB15E /* BaseViewModel.swift */,
+				7861355C2A124B9200CBB15E /* Models */,
 				7861355D2A124DCF00CBB15E /* HomeView */,
 				7861357C2A12525B00CBB15E /* ArtistDetailView */,
 				786135892A1254D600CBB15E /* AlbumDetailView */,
 				7861355E2A124DD600CBB15E /* FavoritesView */,
-				7861355C2A124B9200CBB15E /* Models */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
