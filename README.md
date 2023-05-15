@@ -11,7 +11,6 @@
 - NotificationCenter
 - CustomCells
 - Custom Hex. UIColor
-- MVVM
 - Generic BaseVC and BaseViewModel
 
 
@@ -21,7 +20,7 @@
 ## Requirements
 <img src="https://raw.githubusercontent.com/onurduyar/DeezerApp/main/Assets/req.png?token=GHSAT0AAAAAABY3BBFE5IDIJFBXDPPVZZCWZDCGPXQ" width="900" alt="">
 
-## Project Architecture
+## Project Architecture - MVVM
 <img src="https://raw.githubusercontent.com/onurduyar/DeezerApp/main/Assets/mvvm.png?token=GHSAT0AAAAAABY3BBFE2YOGYGIBNLF5GYUIZDCGRQA" width="700" alt="">
 
 ## Code Samples
