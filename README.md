@@ -15,6 +15,15 @@
 - Custom Hex. UIColor
 - Generic BaseVC and BaseViewModel
 
+| Category     | ArtistList    | Artist             |
+| ------------ | ------------- | ------------------ |
+| <img src="https://github.com/onurduyar/DeezerApp/blob/main/Assets/category.png" width="270" height = "300%" alt=""> | <img src="https://github.com/onurduyar/DeezerApp/blob/main/Assets/artistList.png" width="270" height = "300%" alt="">    | <img src="https://github.com/onurduyar/DeezerApp/blob/main/Assets/artist.png" width="270" height = "300%" alt=""> |
+
+
+| Tracks       | Favorites     |
+| ------------ | ------------- |
+| -<img src="https://github.com/onurduyar/DeezerApp/blob/main/Assets/tracks.png" width="270" height = "300%" alt=""> | <img src="https://github.com/onurduyar/DeezerApp/blob/main/Assets/favorites.png" width="270" height = "300%" alt="">    |
+
 
 ## Gantt Schema
 <img src="https://raw.githubusercontent.com/onurduyar/DeezerApp/main/Assets/gantt.png?token=GHSAT0AAAAAABY3BBFFFIPBPQTT72HUBC52ZDCGOYQ" width="700" alt="">
