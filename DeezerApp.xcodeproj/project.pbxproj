@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		786135142A12434B00CBB15E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135132A12434B00CBB15E /* AppDelegate.swift */; };
 		786135162A12434B00CBB15E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135152A12434B00CBB15E /* SceneDelegate.swift */; };
-		786135182A12434B00CBB15E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135172A12434B00CBB15E /* ViewController.swift */; };
+		786135182A12434B00CBB15E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135172A12434B00CBB15E /* HomeVC.swift */; };
 		7861351E2A12434B00CBB15E /* DeezerApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7861351C2A12434B00CBB15E /* DeezerApp.xcdatamodeld */; };
 		786135202A12434D00CBB15E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7861351F2A12434D00CBB15E /* Assets.xcassets */; };
 		786135232A12434D00CBB15E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786135212A12434D00CBB15E /* LaunchScreen.storyboard */; };
@@ -31,13 +31,22 @@
 		7861355B2A124B5200CBB15E /* AlbumResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7861355A2A124B5200CBB15E /* AlbumResponse.swift */; };
 		786135602A124E2400CBB15E /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7861355F2A124E2400CBB15E /* BaseVC.swift */; };
 		786135622A124E3600CBB15E /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135612A124E3600CBB15E /* BaseViewModel.swift */; };
+		786135672A124EEE00CBB15E /* ArtistListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135662A124EEE00CBB15E /* ArtistListVC.swift */; };
+		786135692A124F0600CBB15E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135682A124F0600CBB15E /* HomeViewModel.swift */; };
+		7861356B2A124F1300CBB15E /* ArtistListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7861356A2A124F1300CBB15E /* ArtistListViewModel.swift */; };
+		7861356D2A124F6100CBB15E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7861356C2A124F6100CBB15E /* HomeView.swift */; };
+		7861356F2A124F6800CBB15E /* MediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7861356E2A124F6800CBB15E /* MediaCell.swift */; };
+		786135712A124F9300CBB15E /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135702A124F9300CBB15E /* CGFloat+Extensions.swift */; };
+		786135732A124FC000CBB15E /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135722A124FC000CBB15E /* UIImage+Extensions.swift */; };
+		786135752A124FCF00CBB15E /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135742A124FCF00CBB15E /* UIColor+Extensions.swift */; };
+		786135772A124FDF00CBB15E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135762A124FDF00CBB15E /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		786135102A12434B00CBB15E /* DeezerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeezerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		786135132A12434B00CBB15E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		786135152A12434B00CBB15E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		786135172A12434B00CBB15E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		786135172A12434B00CBB15E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		7861351D2A12434B00CBB15E /* DeezerApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeezerApp.xcdatamodel; sourceTree = "<group>"; };
 		7861351F2A12434D00CBB15E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		786135222A12434D00CBB15E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +69,15 @@
 		7861355A2A124B5200CBB15E /* AlbumResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumResponse.swift; sourceTree = "<group>"; };
 		7861355F2A124E2400CBB15E /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		786135612A124E3600CBB15E /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		786135662A124EEE00CBB15E /* ArtistListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistListVC.swift; sourceTree = "<group>"; };
+		786135682A124F0600CBB15E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7861356A2A124F1300CBB15E /* ArtistListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistListViewModel.swift; sourceTree = "<group>"; };
+		7861356C2A124F6100CBB15E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7861356E2A124F6800CBB15E /* MediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCell.swift; sourceTree = "<group>"; };
+		786135702A124F9300CBB15E /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		786135722A124FC000CBB15E /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		786135742A124FCF00CBB15E /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		786135762A124FDF00CBB15E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +119,11 @@
 		7861352A2A12477F00CBB15E /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				786135612A124E3600CBB15E /* BaseViewModel.swift */,
+				7861355F2A124E2400CBB15E /* BaseVC.swift */,
 				7861355D2A124DCF00CBB15E /* HomeView */,
 				7861355E2A124DD600CBB15E /* FavoriteView */,
 				7861355C2A124B9200CBB15E /* Models */,
-				786135172A12434B00CBB15E /* ViewController.swift */,
-				7861355F2A124E2400CBB15E /* BaseVC.swift */,
-				786135612A124E3600CBB15E /* BaseViewModel.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -178,6 +195,7 @@
 		786135322A1249A700CBB15E /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				786135762A124FDF00CBB15E /* CoreDataManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -185,6 +203,9 @@
 		786135332A1249AD00CBB15E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				786135702A124F9300CBB15E /* CGFloat+Extensions.swift */,
+				786135722A124FC000CBB15E /* UIImage+Extensions.swift */,
+				786135742A124FCF00CBB15E /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -238,6 +259,9 @@
 		7861355D2A124DCF00CBB15E /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				786135632A124EB600CBB15E /* View */,
+				786135642A124EBA00CBB15E /* ViewModel */,
+				786135652A124ECB00CBB15E /* Controller */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -247,6 +271,33 @@
 			children = (
 			);
 			path = FavoriteView;
+			sourceTree = "<group>";
+		};
+		786135632A124EB600CBB15E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7861356C2A124F6100CBB15E /* HomeView.swift */,
+				7861356E2A124F6800CBB15E /* MediaCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		786135642A124EBA00CBB15E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				786135682A124F0600CBB15E /* HomeViewModel.swift */,
+				7861356A2A124F1300CBB15E /* ArtistListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		786135652A124ECB00CBB15E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				786135172A12434B00CBB15E /* HomeVC.swift */,
+				786135662A124EEE00CBB15E /* ArtistListVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,27 +371,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				786135392A1249E400CBB15E /* NetworkService.swift in Sources */,
+				786135752A124FCF00CBB15E /* UIColor+Extensions.swift in Sources */,
 				786135622A124E3600CBB15E /* BaseViewModel.swift in Sources */,
+				786135712A124F9300CBB15E /* CGFloat+Extensions.swift in Sources */,
 				786135412A124A2B00CBB15E /* Endpoint.swift in Sources */,
-				786135182A12434B00CBB15E /* ViewController.swift in Sources */,
+				786135182A12434B00CBB15E /* HomeVC.swift in Sources */,
 				786135452A124AC700CBB15E /* AlbumListRequest.swift in Sources */,
 				786135512A124B0A00CBB15E /* GenreRequest.swift in Sources */,
 				786135532A124B1D00CBB15E /* ArtistListResponse.swift in Sources */,
+				786135672A124EEE00CBB15E /* ArtistListVC.swift in Sources */,
 				7861353B2A1249FD00CBB15E /* HTTPMethod.swift in Sources */,
+				786135772A124FDF00CBB15E /* CoreDataManager.swift in Sources */,
 				786135142A12434B00CBB15E /* AppDelegate.swift in Sources */,
 				7861354A2A124AE500CBB15E /* ArtistRequest.swift in Sources */,
 				786135552A124B2E00CBB15E /* GenreResponse.swift in Sources */,
 				7861351E2A12434B00CBB15E /* DeezerApp.xcdatamodeld in Sources */,
+				7861356F2A124F6800CBB15E /* MediaCell.swift in Sources */,
 				7861354E2A124AF800CBB15E /* APIRequest.swift in Sources */,
 				786135572A124B3E00CBB15E /* Artist.swift in Sources */,
+				7861356D2A124F6100CBB15E /* HomeView.swift in Sources */,
 				786135162A12434B00CBB15E /* SceneDelegate.swift in Sources */,
 				7861353D2A124A1600CBB15E /* ErrorResponse.swift in Sources */,
 				786135592A124B4300CBB15E /* AlbumList.swift in Sources */,
 				7861354C2A124AED00CBB15E /* AlbumRequest.swift in Sources */,
+				786135692A124F0600CBB15E /* HomeViewModel.swift in Sources */,
 				7861353F2A124A2100CBB15E /* DataRequest.swift in Sources */,
 				7861355B2A124B5200CBB15E /* AlbumResponse.swift in Sources */,
 				786135602A124E2400CBB15E /* BaseVC.swift in Sources */,
 				786135482A124ADA00CBB15E /* ArtistListRequest.swift in Sources */,
+				7861356B2A124F1300CBB15E /* ArtistListViewModel.swift in Sources */,
+				786135732A124FC000CBB15E /* UIImage+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
