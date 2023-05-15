@@ -1,5 +1,7 @@
 # DeezerApp
 
+## GitFlow Strategy
+<img src="https://raw.githubusercontent.com/onurduyar/DeezerApp/main/Assets/gitflow.png?token=GHSAT0AAAAAABY3BBFE7AE54SIJRRXGUYYEZDCHNTQ" alt="">
 
 ## Features
 
