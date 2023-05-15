@@ -27,6 +27,7 @@ The application has been developed using the MVVM architectural pattern, aiming 
 ## Project Development Process
 
 During the development process of this project, Trello was used for project management and git version control system was used for code base management. During the project development process, I determined and assigned tasks as if I was working in a team.
+
 <img src="https://github.com/onurduyar/DeezerApp/blob/main/Assets/trello.png" width="700" alt="">
 
 
