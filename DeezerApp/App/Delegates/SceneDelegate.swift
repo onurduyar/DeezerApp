@@ -12,8 +12,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = UINavigationController(rootViewController: ViewController())
-        window?.makeKeyAndVisible()
+         let tabBarController = UITabBarController()
+         let viewControllers = [
+             createHomeVC(),
+             createFavoriteVC(),
+         ]
+         tabBarController.tabBar.tintColor = .black
+         tabBarController.viewControllers = viewControllers
+         window?.rootViewController = tabBarController
+         window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -46,7 +53,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Save changes in the application's managed object context when the application transitions to the background.
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
-
+    func createHomeVC() -> UINavigationController {
+        let homeVC = HomeVC(viewModel: HomeViewModel.shared)
+        homeVC.title = "Kategoriler"
+        homeVC.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "music.quarternote.3"), tag: 0)
+        return UINavigationController(rootViewController: homeVC)
+    }
+    func createFavoriteVC() -> UINavigationController {
+        let favoritesVC = HomeVC(viewModel: HomeViewModel.shared)
+        favoritesVC.title = "Beğeniler"
+        favoritesVC.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "heart"), tag: 1)
+        favoritesVC.tabBarItem.selectedImage = UIImage(systemName: "heart.fill")
+        return UINavigationController(rootViewController: favoritesVC)
+    }
 
 }
 
