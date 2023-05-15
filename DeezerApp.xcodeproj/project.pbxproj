@@ -44,6 +44,10 @@
 		786135842A1252A600CBB15E /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135832A1252A600CBB15E /* AlbumCell.swift */; };
 		786135862A1252BC00CBB15E /* ArtistDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135852A1252BC00CBB15E /* ArtistDetailViewModel.swift */; };
 		786135882A1252C900CBB15E /* ArtistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135872A1252C900CBB15E /* ArtistVC.swift */; };
+		7861358E2A12551700CBB15E /* AlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7861358D2A12551700CBB15E /* AlbumDetailView.swift */; };
+		786135902A12552100CBB15E /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7861358F2A12552100CBB15E /* TrackCell.swift */; };
+		786135922A12552C00CBB15E /* AlbumDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135912A12552C00CBB15E /* AlbumDetailViewModel.swift */; };
+		786135942A12553800CBB15E /* AlbumDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135932A12553800CBB15E /* AlbumDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +90,10 @@
 		786135832A1252A600CBB15E /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		786135852A1252BC00CBB15E /* ArtistDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailViewModel.swift; sourceTree = "<group>"; };
 		786135872A1252C900CBB15E /* ArtistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistVC.swift; sourceTree = "<group>"; };
+		7861358D2A12551700CBB15E /* AlbumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView.swift; sourceTree = "<group>"; };
+		7861358F2A12552100CBB15E /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		786135912A12552C00CBB15E /* AlbumDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewModel.swift; sourceTree = "<group>"; };
+		786135932A12553800CBB15E /* AlbumDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +139,7 @@
 				7861355F2A124E2400CBB15E /* BaseVC.swift */,
 				7861355D2A124DCF00CBB15E /* HomeView */,
 				7861357C2A12525B00CBB15E /* ArtistDetailView */,
+				786135892A1254D600CBB15E /* AlbumDetailView */,
 				7861355E2A124DD600CBB15E /* FavoriteView */,
 				7861355C2A124B9200CBB15E /* Models */,
 			);
@@ -344,6 +353,41 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		786135892A1254D600CBB15E /* AlbumDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				7861358A2A1254ED00CBB15E /* View */,
+				7861358B2A1254F200CBB15E /* ViewModel */,
+				7861358C2A1254F600CBB15E /* Controller */,
+			);
+			path = AlbumDetailView;
+			sourceTree = "<group>";
+		};
+		7861358A2A1254ED00CBB15E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7861358D2A12551700CBB15E /* AlbumDetailView.swift */,
+				7861358F2A12552100CBB15E /* TrackCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7861358B2A1254F200CBB15E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				786135912A12552C00CBB15E /* AlbumDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7861358C2A1254F600CBB15E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				786135932A12553800CBB15E /* AlbumDetailVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -421,6 +465,7 @@
 				786135412A124A2B00CBB15E /* Endpoint.swift in Sources */,
 				786135182A12434B00CBB15E /* HomeVC.swift in Sources */,
 				786135452A124AC700CBB15E /* AlbumListRequest.swift in Sources */,
+				786135942A12553800CBB15E /* AlbumDetailVC.swift in Sources */,
 				786135512A124B0A00CBB15E /* GenreRequest.swift in Sources */,
 				786135532A124B1D00CBB15E /* ArtistListResponse.swift in Sources */,
 				786135672A124EEE00CBB15E /* ArtistListVC.swift in Sources */,
@@ -431,6 +476,7 @@
 				786135552A124B2E00CBB15E /* GenreResponse.swift in Sources */,
 				7861351E2A12434B00CBB15E /* DeezerApp.xcdatamodeld in Sources */,
 				786135882A1252C900CBB15E /* ArtistVC.swift in Sources */,
+				786135922A12552C00CBB15E /* AlbumDetailViewModel.swift in Sources */,
 				7861356F2A124F6800CBB15E /* MediaCell.swift in Sources */,
 				7861354E2A124AF800CBB15E /* APIRequest.swift in Sources */,
 				786135572A124B3E00CBB15E /* Artist.swift in Sources */,
@@ -443,8 +489,10 @@
 				7861354C2A124AED00CBB15E /* AlbumRequest.swift in Sources */,
 				786135692A124F0600CBB15E /* HomeViewModel.swift in Sources */,
 				7861353F2A124A2100CBB15E /* DataRequest.swift in Sources */,
+				786135902A12552100CBB15E /* TrackCell.swift in Sources */,
 				786135862A1252BC00CBB15E /* ArtistDetailViewModel.swift in Sources */,
 				7861355B2A124B5200CBB15E /* AlbumResponse.swift in Sources */,
+				7861358E2A12551700CBB15E /* AlbumDetailView.swift in Sources */,
 				786135602A124E2400CBB15E /* BaseVC.swift in Sources */,
 				786135482A124ADA00CBB15E /* ArtistListRequest.swift in Sources */,
 				7861356B2A124F1300CBB15E /* ArtistListViewModel.swift in Sources */,
