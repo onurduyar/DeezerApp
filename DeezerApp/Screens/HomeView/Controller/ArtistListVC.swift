@@ -56,6 +56,9 @@ extension ArtistListVC: CollectionViewDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-     
+        let artist = artists?[indexPath.row]
+        let artistVC = ArtistVC(viewModel: ArtistListViewModel.shared)
+        artistVC.artistID = artist?.id
+        navigationController?.pushViewController(artistVC, animated: true)
     }
 }
