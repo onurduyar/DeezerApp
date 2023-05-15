@@ -172,3 +172,5 @@ extension UIColor {
     }
 }
 ```
+
+https://github.com/onurduyar/DeezerApp/assets/61862393/867659fa-cdd4-4961-889f-c095298e1638
