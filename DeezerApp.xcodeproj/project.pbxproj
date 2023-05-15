@@ -13,6 +13,11 @@
 		7861351E2A12434B00CBB15E /* DeezerApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7861351C2A12434B00CBB15E /* DeezerApp.xcdatamodeld */; };
 		786135202A12434D00CBB15E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7861351F2A12434D00CBB15E /* Assets.xcassets */; };
 		786135232A12434D00CBB15E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786135212A12434D00CBB15E /* LaunchScreen.storyboard */; };
+		786135392A1249E400CBB15E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135382A1249E400CBB15E /* NetworkService.swift */; };
+		7861353B2A1249FD00CBB15E /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7861353A2A1249FD00CBB15E /* HTTPMethod.swift */; };
+		7861353D2A124A1600CBB15E /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7861353C2A124A1600CBB15E /* ErrorResponse.swift */; };
+		7861353F2A124A2100CBB15E /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7861353E2A124A2100CBB15E /* DataRequest.swift */; };
+		786135412A124A2B00CBB15E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135402A124A2B00CBB15E /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		7861351F2A12434D00CBB15E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		786135222A12434D00CBB15E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		786135242A12434D00CBB15E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		786135382A1249E400CBB15E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		7861353A2A1249FD00CBB15E /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		7861353C2A124A1600CBB15E /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		7861353E2A124A2100CBB15E /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
+		786135402A124A2B00CBB15E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,7 @@
 		7861352B2A12478200CBB15E /* App */ = {
 			isa = PBXGroup;
 			children = (
+				786135312A1249A000CBB15E /* Core */,
 				7861352D2A12478600CBB15E /* Assets */,
 				7861352F2A1247A400CBB15E /* Views */,
 				7861352C2A12478400CBB15E /* Plists */,
@@ -121,6 +132,50 @@
 				7861351C2A12434B00CBB15E /* DeezerApp.xcdatamodeld */,
 			);
 			path = DB;
+			sourceTree = "<group>";
+		};
+		786135312A1249A000CBB15E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				786135342A1249B300CBB15E /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		786135322A1249A700CBB15E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		786135332A1249AD00CBB15E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		786135342A1249B300CBB15E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				786135322A1249A700CBB15E /* Managers */,
+				786135332A1249AD00CBB15E /* Extensions */,
+				786135362A1249C900CBB15E /* Services */,
+				7861353A2A1249FD00CBB15E /* HTTPMethod.swift */,
+				7861353C2A124A1600CBB15E /* ErrorResponse.swift */,
+				7861353E2A124A2100CBB15E /* DataRequest.swift */,
+				786135402A124A2B00CBB15E /* Endpoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		786135362A1249C900CBB15E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				786135382A1249E400CBB15E /* NetworkService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,10 +248,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				786135392A1249E400CBB15E /* NetworkService.swift in Sources */,
+				786135412A124A2B00CBB15E /* Endpoint.swift in Sources */,
 				786135182A12434B00CBB15E /* ViewController.swift in Sources */,
+				7861353B2A1249FD00CBB15E /* HTTPMethod.swift in Sources */,
 				786135142A12434B00CBB15E /* AppDelegate.swift in Sources */,
 				7861351E2A12434B00CBB15E /* DeezerApp.xcdatamodeld in Sources */,
 				786135162A12434B00CBB15E /* SceneDelegate.swift in Sources */,
+				7861353D2A124A1600CBB15E /* ErrorResponse.swift in Sources */,
+				7861353F2A124A2100CBB15E /* DataRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
