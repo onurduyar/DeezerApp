@@ -24,6 +24,7 @@ final class HomeVC: BaseViewController<MainView> {
     override func viewDidLoad() {
         contentView.setCollectionViewDelegate(delegate: self, andDataSource: self)
         fetchData()
+        FavoritesViewModel.shared.favorites = CoreDataManager.shared.getFavoriteTracks()
         
     }
     override func fetchData(id: Int? = nil) {

@@ -73,7 +73,11 @@ final class AlbumDetailVC: BaseViewController<AlbumDetailView>{
         track.albumCover = albumPicture
         track.isLike.toggle()
         cell.isFavorite.toggle()
-    
+        if !track.isLike{
+            FavoritesViewModel.shared.deleteFromFavorites(track)
+        }else {
+            FavoritesViewModel.shared.addToFavorites(track: track)
+        }
     }
     
     
@@ -96,8 +100,11 @@ extension AlbumDetailVC: TableViewDelegate{
         trackCell.trackImageView.downloadImage(from: URL(string: albumPicture!))
         let duration = albumDetailViewModel.calculateDuration(duration: track?.duration)
         trackCell.length = duration
-       
-      
+        let isContain =  FavoritesViewModel.shared.favorites?.contains(where: { $0.id == track?.id })
+         if isContain ?? false{
+             track?.isLike = true
+             trackCell.isFavorite = true
+         }
         trackCell.likeButton.addTarget(self, action: #selector(likeButtonPressed(_:)), for: .touchUpInside)
         return trackCell
     }

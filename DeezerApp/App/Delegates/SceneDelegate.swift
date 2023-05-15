@@ -60,7 +60,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         return UINavigationController(rootViewController: homeVC)
     }
     func createFavoriteVC() -> UINavigationController {
-        let favoritesVC = HomeVC(viewModel: HomeViewModel.shared)
+        let favoritesVC = FavoritesVC()
         favoritesVC.title = "Beğeniler"
         favoritesVC.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "heart"), tag: 1)
         favoritesVC.tabBarItem.selectedImage = UIImage(systemName: "heart.fill")
