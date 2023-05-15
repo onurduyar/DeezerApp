@@ -12,6 +12,7 @@
 - CustomCells
 - Custom Hex. UIColor
 - MVVM
+- BaseVC and BaseViewModel
 
 
 ## Gantt Schema
