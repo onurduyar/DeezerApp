@@ -1,4 +1,13 @@
-# DeezerApp
+
+<p align="center">
+  <a href="https://github.com/onurduyar/DeezerApp">
+    <img src="https://github.com/onurduyar/DeezerApp/blob/main/Assets/logo.png" alt="Logo" width="100" height="100">
+  </a>
+  <h1 align="center">Deezer App</h1>
+  </p>
+</p>
+
+The application has been developed using the MVVM architectural pattern, aiming to offer users the capability to explore music genres and artists, as well as access comprehensive details about them. Employing a RESTful API, the app retrieves data regarding categories, artists, and albums. This app enables users to explore a vast music collection, discover their preferred songs, navigate through albums and playlists, and save their favorites for future reference.
 
 ## GitFlow Strategy
 <img src="https://raw.githubusercontent.com/onurduyar/DeezerApp/main/Assets/gitflow.png?token=GHSAT0AAAAAABY3BBFE7AE54SIJRRXGUYYEZDCHNTQ" alt="">
