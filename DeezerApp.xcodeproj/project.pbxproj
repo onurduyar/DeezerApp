@@ -48,8 +48,8 @@
 		786135902A12552100CBB15E /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7861358F2A12552100CBB15E /* TrackCell.swift */; };
 		786135922A12552C00CBB15E /* AlbumDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135912A12552C00CBB15E /* AlbumDetailViewModel.swift */; };
 		786135942A12553800CBB15E /* AlbumDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135932A12553800CBB15E /* AlbumDetailVC.swift */; };
-		786135962A1256D000CBB15E /* FavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135952A1256D000CBB15E /* FavoriteVC.swift */; };
-		786135982A1256DA00CBB15E /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135972A1256DA00CBB15E /* FavoriteViewModel.swift */; };
+		786135962A1256D000CBB15E /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135952A1256D000CBB15E /* FavoritesVC.swift */; };
+		786135982A1256DA00CBB15E /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786135972A1256DA00CBB15E /* FavoritesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,8 +96,8 @@
 		7861358F2A12552100CBB15E /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		786135912A12552C00CBB15E /* AlbumDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewModel.swift; sourceTree = "<group>"; };
 		786135932A12553800CBB15E /* AlbumDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailVC.swift; sourceTree = "<group>"; };
-		786135952A1256D000CBB15E /* FavoriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVC.swift; sourceTree = "<group>"; };
-		786135972A1256DA00CBB15E /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		786135952A1256D000CBB15E /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
+		786135972A1256DA00CBB15E /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +144,7 @@
 				7861355D2A124DCF00CBB15E /* HomeView */,
 				7861357C2A12525B00CBB15E /* ArtistDetailView */,
 				786135892A1254D600CBB15E /* AlbumDetailView */,
-				7861355E2A124DD600CBB15E /* FavoriteView */,
+				7861355E2A124DD600CBB15E /* FavoritesView */,
 				7861355C2A124B9200CBB15E /* Models */,
 			);
 			path = Screens;
@@ -288,13 +288,13 @@
 			path = HomeView;
 			sourceTree = "<group>";
 		};
-		7861355E2A124DD600CBB15E /* FavoriteView */ = {
+		7861355E2A124DD600CBB15E /* FavoritesView */ = {
 			isa = PBXGroup;
 			children = (
-				786135952A1256D000CBB15E /* FavoriteVC.swift */,
-				786135972A1256DA00CBB15E /* FavoriteViewModel.swift */,
+				786135952A1256D000CBB15E /* FavoritesVC.swift */,
+				786135972A1256DA00CBB15E /* FavoritesViewModel.swift */,
 			);
-			path = FavoriteView;
+			path = FavoritesView;
 			sourceTree = "<group>";
 		};
 		786135632A124EB600CBB15E /* View */ = {
@@ -468,7 +468,7 @@
 				786135752A124FCF00CBB15E /* UIColor+Extensions.swift in Sources */,
 				786135622A124E3600CBB15E /* BaseViewModel.swift in Sources */,
 				786135712A124F9300CBB15E /* CGFloat+Extensions.swift in Sources */,
-				786135962A1256D000CBB15E /* FavoriteVC.swift in Sources */,
+				786135962A1256D000CBB15E /* FavoritesVC.swift in Sources */,
 				786135412A124A2B00CBB15E /* Endpoint.swift in Sources */,
 				786135182A12434B00CBB15E /* HomeVC.swift in Sources */,
 				786135452A124AC700CBB15E /* AlbumListRequest.swift in Sources */,
@@ -482,7 +482,7 @@
 				7861354A2A124AE500CBB15E /* ArtistRequest.swift in Sources */,
 				786135552A124B2E00CBB15E /* GenreResponse.swift in Sources */,
 				7861351E2A12434B00CBB15E /* DeezerApp.xcdatamodeld in Sources */,
-				786135982A1256DA00CBB15E /* FavoriteViewModel.swift in Sources */,
+				786135982A1256DA00CBB15E /* FavoritesViewModel.swift in Sources */,
 				786135882A1252C900CBB15E /* ArtistVC.swift in Sources */,
 				786135922A12552C00CBB15E /* AlbumDetailViewModel.swift in Sources */,
 				7861356F2A124F6800CBB15E /* MediaCell.swift in Sources */,
