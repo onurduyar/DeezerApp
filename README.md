@@ -180,6 +180,10 @@ extension UIColor {
                   alpha: CGFloat(1.0))
     }
 }
+
 ```
 
-https://github.com/onurduyar/DeezerApp/assets/61862393/867659fa-cdd4-4961-889f-c095298e1638
+
+
+https://github.com/onurduyar/DeezerApp/assets/61862393/5abb7472-c2c5-4607-bb2b-f88eaf061f41
+
