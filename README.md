@@ -26,13 +26,13 @@
 
 
 ## Gantt Schema
-<img src="https://raw.githubusercontent.com/onurduyar/DeezerApp/main/Assets/gantt.png?token=GHSAT0AAAAAABY3BBFFFIPBPQTT72HUBC52ZDCGOYQ" width="700" alt="">
+<img src="https://github.com/onurduyar/DeezerApp/blob/main/Assets/gantt.png" width="700" alt="">
 
 ## Requirements
-<img src="https://raw.githubusercontent.com/onurduyar/DeezerApp/main/Assets/req.png?token=GHSAT0AAAAAABY3BBFE5IDIJFBXDPPVZZCWZDCGPXQ" width="900" alt="">
+<img src="https://github.com/onurduyar/DeezerApp/blob/main/Assets/req.png" width="900" alt="">
 
 ## Project Architecture - MVVM
-<img src="https://raw.githubusercontent.com/onurduyar/DeezerApp/main/Assets/mvvm.png?token=GHSAT0AAAAAABY3BBFE2YOGYGIBNLF5GYUIZDCGRQA" width="700" alt="">
+<img src="https://github.com/onurduyar/DeezerApp/blob/main/Assets/mvvm.png" width="700" alt="">
 
 ## Code Samples
 
