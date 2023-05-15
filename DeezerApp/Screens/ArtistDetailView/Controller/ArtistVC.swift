@@ -82,6 +82,10 @@ extension ArtistVC: TableViewDelegate {
         135
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       
+        let album = albums?.data?[indexPath.row]
+         let albumDetailVC = AlbumDetailVC(viewModel: AlbumDetailViewModel.shared)
+         albumDetailVC.albumID = album?.id
+         albumDetailVC.albumPicture = album?.coverMedium
+         navigationController?.pushViewController(albumDetailVC, animated: true)
     }
 }
